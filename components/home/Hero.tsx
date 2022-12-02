@@ -25,7 +25,7 @@ function Hero(props: Props) {
     <section id="hero">
       <div className="heroContent">
         <h1>{DT[appLang].hero[0]}</h1>
-        <p> {DT[appLang].hero[1]} <a href='https://dribbble.com/shots/14808491-Allies-Creative-Agency-Landing-Page/attachments/6515991?mode=media' target='_blank'>dribbble</a>  {DT[appLang].hero[2]} </p>
+        <p> {DT[appLang].hero[1]} <a href='https://dribbble.com/shots/14808491-Allies-Creative-Agency-Landing-Page/attachments/6515991?mode=media' target='_blank' rel="noreferrer">dribbble</a>  {DT[appLang].hero[2]} </p>
         <a href='#services' className='btn sectionBtn' 
           onMouseOver={ (event) => handelArrowAnmyIn(event)}  
           onMouseLeave={ (event) => handelArrowAnmyOut(event)}
