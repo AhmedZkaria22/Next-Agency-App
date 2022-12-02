@@ -1,0 +1,320 @@
+{
+    "EN": {
+        "nav": [ "Home", "Team" ],
+        "hero": [
+            "ahmed zakaria react agency app",
+            "App built using react.js , scss and data json file to handle multi languages with ", " inspiration",
+            "Learn more"    
+        ],
+        "services": [
+            "what we do",
+            "we are super creative agency service",
+            "We are super creative Agency  company in Alexandria , provides social marketing services and web designs and development solutions with high professional team.",
+            {"items":[
+                [
+                    "ui & ux design", 
+                    "Build professional mobile apps and responsive websites by tallented designers from Egypt with experience in user friendly interfaces."
+                ],
+                [
+                    "mobile apps", 
+                    "Experienced mobile app developers from Egypt working on iOS App Development and Android App Development."
+                ],
+                [
+                    "marketing", 
+                    "Strategy for growing loyalty of your clients and helping you gain a top ranking position on search engines"
+                ],
+                [
+                    "web development", 
+                    "Web Design and Web Development services, to deliver complete software solution using Web applications."
+                ]
+            ]}
+        ],
+        "facts": [
+            ["140+", "happy clients"],
+            ["120+", "project complate"],
+            ["130", "win awards"],
+            ["24", "team member"]
+        ],
+        "projects": {
+            "head": "Our Projects",            
+            "type": [ "all", "ui_&_ux_design", "mobile_apps", "marketing", "web_development" ],
+            "items": [
+                [ "ui ux",           "https://dribbble.com/shots/17988724/attachments/13171729?mode=media", "ui & ux design" ],
+                [ "user flow",       "https://dribbble.com/shots/15104949/attachments/6837855?mode=media", "ui & ux design" ],
+                [ "mobile app",      "https://cdn.dribbble.com/userupload/3124444/file/original-578b9ea207174235acbdf4ab5eea6098.png?compress=1&resize=752x", "mobile apps" ],
+                [ "seo",             "https://dribbble.com/shots/19536580-SEO-Audit-Content-planner-dashboard", "marketing" ],
+                [ "marketing",       "https://dribbble.com/shots/18093425/attachments/13286271?mode=media", "marketing" ],
+                [ "agency",          "https://dribbble.com/shots/19120331/attachments/14280057?mode=media", "marketing" ],
+                [ "e-commerce",      "https://dribbble.com/shots/16899784/attachments/11966055?mode=media", "web development" ],
+                [ "web development", "https://dribbble.com/shots/19415668-Webtec-Landing-Page-Software-Agency", "web development" ],
+                [ "dashboard",       "https://dribbble.com/shots/19190950-Banking-Dashboard", "web development" ]
+            ]
+        },
+        "values":{
+            "head": "our values",
+            "items": [
+                [                    
+                    "Compatibility",
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam mollitia rem veritatis obcaecati."
+                ],
+                [                    
+                    "Precision",
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam mollitia rem veritatis obcaecati."
+                ],
+                [                    
+                    "Rocket",
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam mollitia rem veritatis obcaecati."
+                ]
+            ]
+        },
+        "testmonials":{
+            "head": "WHAT PEOPLE SAY",
+            "testmons": [            
+                [
+                    5, "Dane botsford", 
+                    "Can say about these guys only good words. It has been a pleasure working with them creating the strategy for my company and even some more things."
+                ],
+                [
+                    2, "Jou doe", 
+                    "It has been a pleasure working with them creating the strategy for my company and even some more things. Can say about these guys only good words."
+                ],
+                [
+                    4, "carela",  
+                    "Can say about these guys only good words. It has been a pleasure working with them creating the strategy for my company and even some more things. Can say about these guys only good words...."
+                ],
+                [
+                    1, "emma jonson",  
+                    "It’s the perfect solution for our business.One of the most professional digital marketing Agencies in the Middle East. We’ve seen amazing results already."
+                ],
+                [
+                    3, "noor",  
+                    "Working with AZ Agency was the best decision. They offered unrivaled app development services within budget. I would surely recommend them if someone need to hire an app development company."
+                ]
+            ]
+        },
+        "team":{
+            "head": "Our Team",
+            "desc": "We built a great team that delivers complete solutions",
+            "members": [
+                {                
+                    "name": "Osama Elzero",
+                    "job": "Expert web developer",
+                    "bio": "web development mentor and motivator, love to support and help each web interested from level zero to expert , that's happen in many ways : videos, articles, docs, discuss ... etc from strong web plans",
+                    "social": {
+                      "official": "https://elzero.org/",
+                      "linkedIn": "https://www.linkedin.com/in/osamaelzero/"
+                    }
+                },
+                {                
+                    "name": "ahmed alaa",
+                    "job": "Frontend Engineer | React | Vue",
+                    "bio": "Experienced Frontend Developer with a demonstrated history of working in the computer software industry. Skilled in Vue, React, HTML, SASS, and AJAX. Strong engineering professional.",
+                    "social": {
+                        "official": "https://github.com/AhmedelheGery",
+                        "linkedIn": "https://www.linkedin.com/in/ahmed-elhegery/"
+                    }
+                },
+                {                
+                    "name": "Ahmad Alfy",
+                    "job": "Chief Technology Officer at Robusta Studio",
+                    "bio": "I had passion for the web since I was young. I've built a lot of websites and applications for people and companies across the globe and helped many with consultations about problems they have.",
+                    "social": {
+                        "official": "https://github.com/ahmadalfy",
+                        "linkedIn": "https://www.linkedin.com/in/ahmadalfy/"
+                    }
+                },
+                {                
+                    "name": "Ayatoullah Ramzy",
+                    "job": "Software Engineer",
+                    "bio": "Senior Developer with 4+ years experience in building responsive websites with HTML, CSS, SASS, JavaScript, JQuery, Redux. Expertise in frameworks and agile environment using git as version control.",
+                    "social": {
+                        "official": "https://github.com/ayatoullah",
+                        "linkedIn": "https://www.linkedin.com/in/ayatoullah-ramzy/"
+                    }
+                },
+                {                
+                    "name": "Samar Tekaya",
+                    "job": "Tunisian Programmer | CEO & Founder of SamCoding",
+                    "bio": "A Tunisian programmer and the first Arab girl to teach programming on YouTube. CEO and Founder of SamCoding Corporation. programming videos",
+                    "social": {
+                        "official": "https://samartekaya.netlify.app/",
+                        "linkedIn": "https://www.linkedin.com/in/tekayasamar/"
+                    }
+                },
+                {                
+                    "name": "ahmed zkaria",
+                    "job": "front end developer",
+                    "bio": "Front end Developer at Sphinx Publishing Company , have experience in html, css, Scss, Bootstrap, JavaScript, jQuery, React, Redux, Firebase, Photoshop, Illustrator",
+                    "social": {
+                        "official": "https://ahmed-portfolio-v1-6678d.web.app/#/",
+                        "linkedIn": "https://www.linkedin.com/in/ahmed-zakaria-a554a4183"
+                    }
+                }          
+            ]
+        },
+        "contact":{
+            "head": "DON’T HESITATE TO CONTACT WITH US FOR ANY KIND OF INFORMATION",
+            "form": ["Send Message", "user name", "email address", "subject", "message", "Send Message"],
+            "map": "location"
+        }
+    },
+    "AR":{
+        "nav": [ "الرئيسية", "فريق العمل" ],
+        "hero": [
+            "تطبيق وكالة ريأكت متعدد اللغات",
+            "التطبيق تم إنشاؤه باستخدام react.js و scss و data json للتعامل مع لغات متعددة باستخدام ", " للإلهام" ,
+            "أعرف المزيد"    
+        ],
+        "services": [
+            "ماذا نفعل",
+            "نحن وكالة خدمة فائقة الإبداع",
+            "نحن وكالة فائقة الإبداع في الإسكندرية ، نقدم خدمات التسويق الاجتماعي وتصميمات الويب وحلول التطوير مع فريق محترف على أعلى مستوى.",
+            {"items":[
+                [
+                    "واجهة و تجربة المستخدم", 
+                    "أنشئ تطبيقات جوال احترافية ومواقع ويب سريعة الاستجابة من قبل مصممين بارزين من مصر يتمتعون بخبرة في واجهات سهلة الاستخدام."
+                ],
+                [
+                    "تطبيقات جوال", 
+                    "مطورو تطبيقات الأجهزة المحمولة من مصر ذوي الخبرة يعملون على تطوير تطبيقات iOS وتطوير تطبيقات Android."
+                ],
+                [
+                    "تسويق", 
+                    "إستراتيجية لزيادة ولاء عملائك ومساعدتك في الحصول على مرتبة عالية في محركات البحث"
+                ],
+                [
+                    "تطوير ويب", 
+                    "خدمات تصميم الويب وتطوير الويب ، لتقديم حل برمجي كامل باستخدام تطبيقات الويب."
+                ]
+            ]}
+        ],
+        "facts": [
+            ["140+", "عميل سعيد"],
+            ["120+", "مشروع كامل"],
+            ["130", "جائزة"],
+            ["24", "عضو فريق"]
+        ],
+        "projects": {
+            "head": "أعمالنا",
+            "type": [ "كل", "واجهة_و_تجربة_المستخدم", "تطبيقات_جوال", "تسويق", "تطوير_ويب" ], 
+            "items": [
+                [ "ui ux", "https://dribbble.com/shots/17988724/attachments/13171729?mode=media", "واجهة و تجربة المستخدم" ],
+                [ "user flow", "https://dribbble.com/shots/15104949/attachments/6837855?mode=media", "واجهة و تجربة المستخدم" ],
+                [ "mobile app", "https://cdn.dribbble.com/userupload/3124444/file/original-578b9ea207174235acbdf4ab5eea6098.png?compress=1&resize=752x", "تطبيقات جوال" ],
+                [ "seo", "https://dribbble.com/shots/19536580-SEO-Audit-Content-planner-dashboard", "تسويق" ],
+                [ "marketing", "https://dribbble.com/shots/18093425/attachments/13286271?mode=media", "تسويق" ],
+                [ "agency", "https://dribbble.com/shots/19120331/attachments/14280057?mode=media", "تسويق" ],
+                [ "e-commerce", "https://dribbble.com/shots/16899784/attachments/11966055?mode=media", "تطوير ويب" ],
+                [ "web development", "https://dribbble.com/shots/19415668-Webtec-Landing-Page-Software-Agency", "تطوير ويب" ],
+                [ "dashboard", "https://dribbble.com/shots/19190950-Banking-Dashboard", "تطوير ويب" ]
+            ]
+        },
+        "values":{
+            "head": "قيمنا",
+            "items": [
+                [                    
+                    "التوافق",
+                    "لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم"
+                ],
+                [                    
+                    "الدقة",
+                    "لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم"
+                ],
+                [                    
+                    "السرعة",
+                    "لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم"
+                ]
+            ]
+        },
+        "testmonials":{
+            "head": "ماذا قالو عنا",
+            "testmons": [
+                [
+                    5, "Dane botsford", 
+                    "يمكن أن أقول عن هؤلاء الشباب فقط الكلمات الطيبة. لقد كان من دواعي سروري العمل معهم لإنشاء إستراتيجية لشركتي وحتى بعض الأشياء الأخرى."
+                ],
+                [
+                    2, "Jou doe", 
+                    "لقد كان من دواعي سروري العمل معهم لإنشاء إستراتيجية لشركتي وحتى بعض الأشياء الأخرى. يمكن أن أقول عن هؤلاء الشباب فقط الكلمات الطيبة."
+                ],
+                [
+                    4, "carela",  
+                    "يمكن أن أقول عن هؤلاء الرجال فقط الكلمات الطيبة. لقد كان من دواعي سروري العمل معهم لإنشاء إستراتيجية لشركتي وحتى بعض الأشياء الأخرى. يمكن أن أقول عن هؤلاء الرجال فقط الكلمات الطيبة ...."
+                ],
+                [
+                    1, "emma jonson",  
+                    "إنها الحل الأمثل لأعمالنا ، وهي إحدى وكالات التسويق الرقمي الأكثر احترافًا في الشرق الأوسط. لقد رأينا نتائج مذهلة بالفعل."
+                ],
+                [
+                    3, "noor",  
+                    "كان العمل مع AZ Agency أفضل قرار. لقد قدموا خدمات تطوير تطبيقات لا مثيل لها في حدود الميزانية. أود بالتأكيد أن أوصي بهم إذا احتاج شخص ما إلى استئجار شركة لتطوير التطبيقات."
+                ]
+            ]
+        },
+        "team":{
+            "head": "فريقنا",
+            "desc": "لقد أنشأنا فريقًا رائعًا يقدم حلولًا كاملة",
+            "members": [
+                {                
+                    "name": "أسامه الزيرو",
+                    "job": "مطور ويب خبير",
+                    "bio": "خبير فى تطوير الويب ، يحب دعم ومساعدة كل مهتم بالويب من المستوى صفر إلى الاحتراف ، وهذا يحدث بعدة طرق: مقاطع الفيديو ، والمقالات ، والمستندات ، والمناقشة ... إلخ من خطط الويب القوية",
+                    "social": {
+                    "official": "https://elzero.org/",
+                    "linkedIn": "https://www.linkedin.com/in/osamaelzero/"
+                    }
+                },
+                {                
+                    "name": "أحمد علاء",
+                    "job": "مهندس بالتطوير الأمامى | ريأكت فيو",
+                    "bio": "مطور واجهات أمامية ذو خبرة لديه معرض أعمال قوى في تطوير مواقع الويب . ماهر في Vue و React و HTML و SASS و AJAX. مهندس محترف قوي.",
+                    "social": {
+                        "official": "https://github.com/AhmedelheGery",
+                        "linkedIn": "https://www.linkedin.com/in/ahmed-elhegery/"
+                    }
+                },
+                {                
+                    "name": "أحمد الألفى",
+                    "job": "رئيس قسم التكنولوجيا في Robusta Studio",
+                    "bio": "كان لدي شغف بالويب منذ أن كنت صغيرًا. لقد أنشأت الكثير من مواقع الويب والتطبيقات للأشخاص والشركات في جميع أنحاء العالم وساعدت الكثيرين في الاستشارات حول المشكلات التي يواجهونها.",
+                    "social": {
+                        "official": "https://github.com/ahmadalfy",
+                        "linkedIn": "https://www.linkedin.com/in/ahmadalfy/"
+                    }
+                },
+                {                
+                    "name": "أية الله رمزى",
+                    "job": "مهندسة برمجيات",
+                    "bio": "مطورة أمامية تتمتع بخبرة تزيد عن 4 سنوات في إنشاء مواقع ويب سريعة الاستجابة باستخدام HTML و CSS و SASS و JavaScript و JQuery و Redux. الخبرة في الأطر والبيئة المرنة باستخدام git للتحكم في الإصدار.",
+                    "social": {
+                        "official": "https://github.com/ayatoullah",
+                        "linkedIn": "https://www.linkedin.com/in/ayatoullah-ramzy/"
+                    }
+                },
+                {                
+                    "name": "سمر تقية",
+                    "job": "مبرمجة تونسية | مؤسسة سام_كودينج",
+                    "bio": "مبرمجة تونسية وأول فتاة عربية تقوم بتدريس البرمجة على اليوتيوب. الرئيس التنفيذي ومؤسس شركة SamCoding Corporation. برمجة مقاطع الفيديو",
+                    "social": {
+                        "official": "https://samartekaya.netlify.app/",
+                        "linkedIn": "https://www.linkedin.com/in/tekayasamar/"
+                    }
+                },
+                {                
+                    "name": "أحمد زكريا",
+                    "job": "مطور أمامى",
+                    "bio": "مطور الواجهة الأمامية في شركة Sphinx Publishing Company ، لدى خبرة في html و css و Scss و Bootstrap و JavaScript و jQuery و React و Redux و Firebase و Photoshop و Illustrator",
+                    "social": {
+                        "official": "https://ahmed-portfolio-v1-6678d.web.app/#/",
+                        "linkedIn": "https://www.linkedin.com/in/ahmed-zakaria-a554a4183"
+                    }
+                }          
+            ]
+        },
+        "contact":{
+            "head": "لا تتردد فى التواصل معنا لأى سبب",
+            "form": ["تواصل معنا", "أسم المستخدم", "البريد الإلكترونى", "العنوان", "الرسالة", "إرسل"],
+            "map": "الموقع"
+        }
+    }
+}

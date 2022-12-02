@@ -1,0 +1,4 @@
+App.json
+projects "type": [ "all", "ui & ux design", "mobile apps", "marketing", "web development" ],
+"type": [ "كل", "واجهة و تجربة المستخدم", "تطبيقات جوال", "تسويق", "تطوير ويب" ],
+
