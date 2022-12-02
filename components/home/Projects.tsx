@@ -109,7 +109,7 @@ function Projects(props: Props) {
 
     };
 
-    const projectsIcons = [<TbPaperBag/>, <TbColorSwatch />, <MdOutlinePhoneIphone />, <TbTarget />, <FaLaptopCode />];
+    const projectsIcons = [<TbPaperBag key={0}/>, <TbColorSwatch key={1}/>, <MdOutlinePhoneIphone key={2}/>, <TbTarget key={3}/>, <FaLaptopCode key={4}/>];
     
     const tooltipsPlace: string[] | Placement[] | any[] = [`top`, `right`, `bottom`, `left`, `top`];
     
@@ -204,13 +204,13 @@ function Projects(props: Props) {
                                     : <p className='mb-0'>{prj[0]}</p>
                                 }
                                 <div className="svgWrap">
-                                    <a href={prj[1]} target='_blank'> <TbPaperBag /> </a>
+                                    <a href={prj[1]} target='_blank' rel="noreferrer"> <TbPaperBag /> </a>
                                 </div>
                             </div>
                         </motion.div>
                     )
                 } )
-            }
+            } 
         </div>
         
     </section>

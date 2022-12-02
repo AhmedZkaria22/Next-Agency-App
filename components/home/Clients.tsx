@@ -65,7 +65,7 @@ function Clients() {
         }else if( (document.querySelector('html') as HTMLElement).getAttribute('lang') == 'en' && clientSec.current != null ){
             (clientSec.current as HTMLElement).classList.remove('ClientsLang');
         }
-    }, [typeof window !== 'undefined' && (document.querySelector('html') as HTMLElement).getAttribute('lang')] );
+    }, [typeof window !== 'undefined' , (document.querySelector('html') as HTMLElement).getAttribute('lang')] );
 
 
     return (
