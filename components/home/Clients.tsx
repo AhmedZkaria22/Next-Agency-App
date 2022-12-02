@@ -47,7 +47,9 @@ function Clients() {
         ]
     };
 
-    const clientSec = useRef<HTMLElement>(null);
+    const clientSec = useRef<HTMLElement>(null),
+    typeWindow = typeof window !== 'undefined',
+    slctHtmlElmt = (document.querySelector('html') as HTMLElement).getAttribute('lang');
 
     useMemo( () => {
         if(typeof window !== 'undefined' && document != null){            
@@ -65,7 +67,7 @@ function Clients() {
         }else if( (document.querySelector('html') as HTMLElement).getAttribute('lang') == 'en' && clientSec.current != null ){
             (clientSec.current as HTMLElement).classList.remove('ClientsLang');
         }
-    }, [typeof window !== 'undefined' , (document.querySelector('html') as HTMLElement).getAttribute('lang')] );
+    }, [typeWindow , slctHtmlElmt] );
 
 
     return (
