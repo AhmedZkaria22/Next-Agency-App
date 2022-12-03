@@ -1,4 +1,4 @@
-import React, { useMemo, useRef } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import {motion, Variants, } from 'framer-motion';
 import { useEffect } from 'react';
 interface Props {
@@ -18,7 +18,9 @@ const Facts = (props: Props) => {
 
     const obsOption: IntersectionObserverInit = {...useMemo( () => { return {root: null,  threshold: 0, rootMargin: "0px"} as object }, [] )}
     
+    const [ssrLis, setSsrLis] = useState(false);
     useEffect( () => {
+        setSsrLis(true);
         let counters = document.querySelectorAll('#facts .fact') as NodeListOf<HTMLElement> ;
         let speed = 250;
 
@@ -49,7 +51,7 @@ const Facts = (props: Props) => {
             }, obsOption);
             counterObserver.observe(factWrap.current as Element);
 
-    }, [factWrap, obsOption]);
+    }, [ssrLis, factWrap, obsOption]);
 
     const factVr: Variants = {
         hidden: { opacity: 0, scale: 0.8 },

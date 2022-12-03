@@ -44,8 +44,10 @@ function Values(props: Props) {
   const [valInit, setValInit] = useState('hidden');
   const [valAnmy, setValAnmy] = useState('visible');
 
+  const [ssrLis, setSsrLis] = useState(false);
 
   useMemo( () => {
+    setSsrLis(true);
     if( typeof window !== 'undefined' ){
       if( window.innerWidth > 768 ){  
         // setValVr({...valuesVariants});
@@ -56,6 +58,7 @@ function Values(props: Props) {
         setValInit('hidden-sm');
         setValAnmy('visible-sm');
       }
+      setValVr( window.innerWidth > 768 ? {...valuesVariants} : {...valuesVariantsSm} )
   
       window.onresize = () => {
           if( window.innerWidth > 768 ){  
@@ -67,27 +70,22 @@ function Values(props: Props) {
             setValInit('hidden-sm');
             setValAnmy('visible-sm');
           }    
+          setValVr( window.innerWidth > 768 ? {...valuesVariants} : {...valuesVariantsSm} )
       }
     }
-  }, [] );
+  },[ssrLis]);
 
-  useEffect( () => {
-    if( typeof window !== 'undefined' ){
-      if( window.innerWidth > 768 ){  
-        setValVr({...valuesVariants});
-      }else{
-        setValVr({...valuesVariantsSm});
-      }
   
-      window.onresize = () => {
-          if( window.innerWidth > 768 ){  
-            setValVr({...valuesVariants});
-          }else{
-            setValVr({...valuesVariantsSm});
-          }    
-      }
-    }
-  }, [] );
+
+  // useEffect( () => {
+  //   setSsrLis(true);
+  //   if( typeof window !== 'undefined' ){  
+  //     setValVr( window.innerWidth > 768 ? {...valuesVariants} : {...valuesVariantsSm} )
+  //     window.onresize = () => {
+  //       setValVr( window.innerWidth > 768 ? {...valuesVariants} : {...valuesVariantsSm} )
+  //     }
+  //   }
+  // }, [ssrLis] );
 
   return (
     <section id="values">
