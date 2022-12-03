@@ -12,15 +12,15 @@ const Facts = (props: Props) => {
     const {appLang, ssrLisCh} = props;  
 
     const factWrap = useRef<Element | undefined | any>(null);    
-    // const obsOption: Object = {
-    //     root: null,  threshold: 0, rootMargin: "0px"
-    // }
+    const obsOption: Object = {
+        root: null,  threshold: 0, rootMargin: "0px"
+    }
 
-    const [ssrLis, setSsrLis] = useState(false);
-    const obsOption: IntersectionObserverInit = {...useMemo( () => {
-        setSsrLis(true);
-        return {root: null,  threshold: 0, rootMargin: "0px"} as object 
-    }, [ssrLis] )}
+    // const [ssrLis, setSsrLis] = useState(false);
+    // const obsOption: IntersectionObserverInit = {...useMemo( () => {
+    //     setSsrLis(true);
+    //     return {root: null,  threshold: 0, rootMargin: "0px"} as object 
+    // }, [ssrLis] )}
     
     useEffect( () => {
         
