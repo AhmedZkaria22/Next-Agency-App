@@ -57,8 +57,8 @@ function TeamMember(props: Props) {
         </div>
           <p>{member.bio}</p>
           <div className="Team_members_item_links">
-              <a href={member.social.official} target='_blank' title='official'><TiLink /> </a>
-              <a href={member.social.linkedIn} target='_blank' title='linkedIn'><TiSocialLinkedin /></a>
+              <a href={member.social.official} target='_blank' rel="noreferrer" title='official'><TiLink /> </a>
+              <a href={member.social.linkedIn} target='_blank' rel="noreferrer" title='linkedIn'><TiSocialLinkedin /></a>
           </div>
       </motion.div>
     }</>
