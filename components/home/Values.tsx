@@ -85,8 +85,8 @@ function Values(props: Props) {
         setValVr( window.innerWidth > 768 ? {...valuesVariants} : {...valuesVariantsSm} )
       }
     }
-  // }, [ssrLis, valuesVariants, valuesVariantsSm] );
-  }, [ssrLis, valVr] );
+  }, [ssrLis, valuesVariants, valuesVariantsSm] );
+  // }, [ssrLis, valVr] );
 
   return (
     <section id="values">
