@@ -21,24 +21,48 @@ function Values(props: Props) {
 
   const valuesDelay: number[] = [ 0.3, 0.1, 0.3 ];
   
-  const valuesVariants: Variants = {
-    hidden: { opacity: 0,   y: 35 },
-    visible: {
-      opacity: [ 0, 0.4, 0.9, 0.5, 1 ],
-      y: [35, 0],
-    }
-  }
+  // const valuesVariants: Variants = {
+  //   hidden: { opacity: 0,   y: 35 },
+  //   visible: {
+  //     opacity: [ 0, 0.4, 0.9, 0.5, 1 ],
+  //     y: [35, 0],
+  //   }
+  // }
   
-  const valuesVariantsSm: Variants = {
-    hidden0: { opacity: 0,   x: 50 },
-    visible0: { opacity: 1,   x: 0 },
+  // const valuesVariantsSm: Variants = {
+  //   hidden0: { opacity: 0,   x: 50 },
+  //   visible0: { opacity: 1,   x: 0 },
 
-    hidden1: { opacity: 0,   scale: 0.2 },
-    visible1: { opacity: 1,   scale: 1 },
+  //   hidden1: { opacity: 0,   scale: 0.2 },
+  //   visible1: { opacity: 1,   scale: 1 },
 
-    hidden2: { opacity: 0,   x: -50 },
-    visible2: { opacity: 1,   x: 0 }
-  }
+  //   hidden2: { opacity: 0,   x: -50 },
+  //   visible2: { opacity: 1,   x: 0 }
+  // }
+
+
+  const valuesVariants: Variants = useMemo( () => {
+    return {
+      hidden: { opacity: 0,   y: 35 },
+      visible: {
+        opacity: [ 0, 0.4, 0.9, 0.5, 1 ],
+        y: [35, 0],
+      }
+    }
+  }, [] ) 
+  
+  const valuesVariantsSm: Variants = useMemo( () => {
+    return {
+      hidden0: { opacity: 0,   x: 50 },
+      visible0: { opacity: 1,   x: 0 },
+  
+      hidden1: { opacity: 0,   scale: 0.2 },
+      visible1: { opacity: 1,   scale: 1 },
+  
+      hidden2: { opacity: 0,   x: -50 },
+      visible2: { opacity: 1,   x: 0 }
+    }
+  }, [] ) 
 
   const [valVr, setValVr] = useState({...valuesVariants});
   const [valInit, setValInit] = useState('hidden');
