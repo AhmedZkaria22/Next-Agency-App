@@ -49,7 +49,7 @@ function Clients() {
 
     const clientSec = useRef<HTMLElement>(null),
     typeWindow = typeof window !== 'undefined',
-    slctHtmlElmt = (document.querySelector('html') as HTMLElement).getAttribute('lang');
+    slctHtmlElmt = typeof document !== 'undefined' && (document.querySelector('html') as HTMLElement).getAttribute('lang');
 
     useMemo( () => {
         if(typeof window !== 'undefined' && document != null){            

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useMemo, useRef } from 'react';
 import {motion, Variants, } from 'framer-motion';
 import { useEffect } from 'react';
 interface Props {
@@ -11,11 +11,12 @@ const Facts = (props: Props) => {
     const DT = require('../../App.json');
     const {appLang, ssrLisCh} = props;  
 
-    const factWrap = useRef<Element | undefined | any>(null);
-    const obsOption: Object = {
-        root: null,  threshold: 0, rootMargin: "0px"
-    }
+    const factWrap = useRef<Element | undefined | any>(null);    
+    // const obsOption: Object = {
+    //     root: null,  threshold: 0, rootMargin: "0px"
+    // }
 
+    const obsOption: IntersectionObserverInit = {...useMemo( () => { return {root: null,  threshold: 0, rootMargin: "0px"} as object }, [] )}
     
     useEffect( () => {
         let counters = document.querySelectorAll('#facts .fact') as NodeListOf<HTMLElement> ;
@@ -48,7 +49,7 @@ const Facts = (props: Props) => {
             }, obsOption);
             counterObserver.observe(factWrap.current as Element);
 
-    }, [factWrap, obsOption])
+    }, [factWrap, obsOption]);
 
     const factVr: Variants = {
         hidden: { opacity: 0, scale: 0.8 },
