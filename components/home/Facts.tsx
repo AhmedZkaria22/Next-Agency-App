@@ -16,11 +16,14 @@ const Facts = (props: Props) => {
     //     root: null,  threshold: 0, rootMargin: "0px"
     // }
 
-    const obsOption: IntersectionObserverInit = {...useMemo( () => { return {root: null,  threshold: 0, rootMargin: "0px"} as object }, [] )}
-    
     const [ssrLis, setSsrLis] = useState(false);
-    useEffect( () => {
+    const obsOption: IntersectionObserverInit = {...useMemo( () => {
         setSsrLis(true);
+        return {root: null,  threshold: 0, rootMargin: "0px"} as object 
+    }, [ssrLis] )}
+    
+    useEffect( () => {
+        
         let counters = document.querySelectorAll('#facts .fact') as NodeListOf<HTMLElement> ;
         let speed = 250;
 
@@ -51,7 +54,7 @@ const Facts = (props: Props) => {
             }, obsOption);
             counterObserver.observe(factWrap.current as Element);
 
-    }, [ssrLis, factWrap, obsOption]);
+    }, [factWrap, obsOption]);
 
     const factVr: Variants = {
         hidden: { opacity: 0, scale: 0.8 },
