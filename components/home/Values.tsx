@@ -73,7 +73,7 @@ function Values(props: Props) {
           // setValVr( window.innerWidth > 768 ? {...valuesVariants} : {...valuesVariantsSm} )
       }
     }
-  },[]);
+  },[valuesVariants, valuesVariantsSm]);
 
   
 
