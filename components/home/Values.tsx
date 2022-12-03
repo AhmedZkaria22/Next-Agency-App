@@ -5,6 +5,7 @@ import { IoIosRocket } from 'react-icons/io';
 import { motion, Variants } from 'framer-motion';
 import { useState } from 'react';
 import { useMemo } from 'react';
+import { Resonsive_Framer_Motion } from '../../handelFramerMotion';
 
 interface Props{
   appLang: string,
@@ -15,7 +16,7 @@ interface Props{
 function Values(props: Props) {
   const DT = require('../../App.json');
   const {appLang, ssrLisCh} = props;  
-  const valuesIcons = [<GiArcheryTarget />, <BsFillGearFill />, <IoIosRocket />];
+  const valuesIcons = [<GiArcheryTarget key={0}/>, <BsFillGearFill key={1}/>, <IoIosRocket key={2}/>];
   
 
   const valuesDelay: number[] = [ 0.3, 0.1, 0.3 ];
@@ -47,24 +48,42 @@ function Values(props: Props) {
   useMemo( () => {
     if( typeof window !== 'undefined' ){
       if( window.innerWidth > 768 ){  
-        setValVr({...valuesVariants});
+        // setValVr({...valuesVariants});
         setValInit('hidden');
         setValAnmy('visible');
       }else{
-        setValVr({...valuesVariantsSm});
+        // setValVr({...valuesVariantsSm});
         setValInit('hidden-sm');
         setValAnmy('visible-sm');
       }
   
       window.onresize = () => {
           if( window.innerWidth > 768 ){  
-            setValVr({...valuesVariants});
+            // setValVr({...valuesVariants});
             setValInit('hidden');
             setValAnmy('visible');
           }else{
-            setValVr({...valuesVariantsSm});
+            // setValVr({...valuesVariantsSm});
             setValInit('hidden-sm');
             setValAnmy('visible-sm');
+          }    
+      }
+    }
+  }, [] );
+
+  useEffect( () => {
+    if( typeof window !== 'undefined' ){
+      if( window.innerWidth > 768 ){  
+        setValVr({...valuesVariants});
+      }else{
+        setValVr({...valuesVariantsSm});
+      }
+  
+      window.onresize = () => {
+          if( window.innerWidth > 768 ){  
+            setValVr({...valuesVariants});
+          }else{
+            setValVr({...valuesVariantsSm});
           }    
       }
     }
