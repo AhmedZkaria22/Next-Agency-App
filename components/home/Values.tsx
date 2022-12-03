@@ -73,7 +73,7 @@ function Values(props: Props) {
           // setValVr( window.innerWidth > 768 ? {...valuesVariants} : {...valuesVariantsSm} )
       }
     }
-  },[valuesVariants, valuesVariantsSm]);
+  },[]);
 
   
 
@@ -85,7 +85,8 @@ function Values(props: Props) {
         setValVr( window.innerWidth > 768 ? {...valuesVariants} : {...valuesVariantsSm} )
       }
     }
-  }, [ssrLis] );
+  // }, [ssrLis, valuesVariants, valuesVariantsSm] );
+  }, [ssrLis, valVr] );
 
   return (
     <section id="values">
