@@ -2,8 +2,8 @@
     "EN": {
         "nav": [ "Home", "Team" ],
         "hero": [
-            "ahmed zakaria react agency app",
-            "App built using react.js , scss and data json file to handle multi languages with ", " inspiration",
+            "ahmed zakaria next agency app",
+            "App built using next.js, react.js , scss and data json file to handle multi languages with ", " inspiration",
             "Learn more"    
         ],
         "services": [
@@ -161,8 +161,8 @@
     "AR":{
         "nav": [ "الرئيسية", "فريق العمل" ],
         "hero": [
-            "تطبيق وكالة ريأكت متعدد اللغات",
-            "التطبيق تم إنشاؤه باستخدام react.js و scss و data json للتعامل مع لغات متعددة باستخدام ", " للإلهام" ,
+            "تطبيق وكالة نكست متعدد اللغات",
+            "التطبيق تم إنشاؤه باستخدام next.js و react.js و scss و data json للتعامل مع لغات متعددة باستخدام ", " للإلهام" ,
             "أعرف المزيد"    
         ],
         "services": [
