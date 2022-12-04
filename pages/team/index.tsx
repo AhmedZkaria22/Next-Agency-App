@@ -24,9 +24,9 @@ function Team(props: Props) {
   return (<>
     <Head>
       <meta property='og:title' content='Next | Agency App - Team Page' />
-      {/* <meta property='og:image' content='/vercel.svg' />  !!!!!*/}
       <meta property='og:type' content='website' />
-      <meta property='og:url' content='http://localhost:3000/team' />
+      <meta property='og:url' content='https://next-agency-app.vercel.app/team' />
+      <meta property='og:image' content='/team.png' />
       <meta property='og:description' content="Ahmed Zakaria Next React Agency Team : 
         We built a great team that delivers complete solutions to companies and clients" />  
       <meta property="og:keywords" content=" ahmed zakaria, next app, react app, react.js, 

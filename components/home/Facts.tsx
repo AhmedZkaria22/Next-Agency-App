@@ -16,12 +16,6 @@ const Facts = (props: Props) => {
         root: null,  threshold: 0, rootMargin: "0px"
     }
 
-    // const [ssrLis, setSsrLis] = useState(false);
-    // const obsOption: IntersectionObserverInit = {...useMemo( () => {
-    //     setSsrLis(true);
-    //     return {root: null,  threshold: 0, rootMargin: "0px"} as object 
-    // }, [ssrLis] )}
-    
     useEffect( () => {
         
         let counters = document.querySelectorAll('#facts .fact') as NodeListOf<HTMLElement> ;

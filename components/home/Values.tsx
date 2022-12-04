@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { GiArcheryTarget } from 'react-icons/gi';
 import { BsFillGearFill } from 'react-icons/bs';
 import { IoIosRocket } from 'react-icons/io';
 import { motion, Variants } from 'framer-motion';
 import { useState } from 'react';
 import { useMemo } from 'react';
-import { Resonsive_Framer_Motion } from '../../handelFramerMotion';
 
 interface Props{
   appLang: string,
@@ -41,44 +40,16 @@ function Values(props: Props) {
   }
 
 
-  // const valuesVariants: Variants = {...useMemo( () => {
-  //   return {
-  //     hidden: { opacity: 0,   y: 35 },
-  //     visible: {
-  //       opacity: [ 0, 0.4, 0.9, 0.5, 1 ],
-  //       y: [35, 0],
-  //     }
-  //   }
-  // }, [] )}
-  
-  // const valuesVariantsSm: Variants = {...useMemo( () => {
-  //   return {
-  //     hidden0: { opacity: 0,   x: 50 },
-  //     visible0: { opacity: 1,   x: 0 },
-  
-  //     hidden1: { opacity: 0,   scale: 0.2 },
-  //     visible1: { opacity: 1,   scale: 1 },
-  
-  //     hidden2: { opacity: 0,   x: -50 },
-  //     visible2: { opacity: 1,   x: 0 }
-  //   }
-  // }, [] )} 
-
   const [valVr, setValVr] = useState({...valuesVariants});
   const [valInit, setValInit] = useState('hidden');
   const [valAnmy, setValAnmy] = useState('visible');
 
-  // const [ssrLis, setSsrLis] = useState(false);
-
   useMemo( () => {
-    // setSsrLis(true);
     if( typeof window !== 'undefined' ){
       if( window.innerWidth > 768 ){  
-        // setValVr({...valuesVariants});
         setValInit('hidden');
         setValAnmy('visible');
       }else{
-        // setValVr({...valuesVariantsSm});
         setValInit('hidden-sm');
         setValAnmy('visible-sm');
       }
@@ -86,11 +57,9 @@ function Values(props: Props) {
   
       window.onresize = () => {
           if( window.innerWidth > 768 ){  
-            // setValVr({...valuesVariants});
             setValInit('hidden');
             setValAnmy('visible');
           }else{
-            // setValVr({...valuesVariantsSm});
             setValInit('hidden-sm');
             setValAnmy('visible-sm');
           }    
@@ -99,18 +68,6 @@ function Values(props: Props) {
     }
   },[]);
 
-  
-
-  // useEffect( () => {
-  //   setSsrLis(true);
-  //   if( typeof window !== 'undefined' ){  
-  //     setValVr( window.innerWidth > 768 ? {...valuesVariants} : {...valuesVariantsSm} )
-  //     window.onresize = () => {
-  //       setValVr( window.innerWidth > 768 ? {...valuesVariants} : {...valuesVariantsSm} )
-  //     }
-  //   }
-  // }, [ssrLis, valuesVariants, valuesVariantsSm] );
-  // }, [ssrLis, valVr] );
 
   return (
     <section id="values">
@@ -120,7 +77,7 @@ function Values(props: Props) {
               DT[appLang].values.items.map( (vl: string[], v: number) => {
                 return( ssrLisCh &&
                   <motion.div className="valueItem" key={v}
-                  variants={(typeof window != 'undefined' && localStorage.getItem('homeAnmy') === '0') ? valVr : {}}
+                    variants={(typeof window != 'undefined' && localStorage.getItem('homeAnmy') === '0') ? valVr : {}}
                     initial={ (valInit == 'hidden-sm') ? `hidden${v}` : valInit }
                     whileInView={ (valAnmy == 'visible-sm') ? `visible${v}` : valAnmy }
                     viewport={{ once: true }}
