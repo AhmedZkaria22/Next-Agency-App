@@ -18,13 +18,17 @@ function Navbar(props: Props) {
         (document.querySelector('html') as HTMLElement).setAttribute('lang', `${(e.target as Element).getAttribute('data-lang')}`);
         (document.querySelector('main') as HTMLElement).style.direction = `${(e.target as Element).getAttribute('data-dir')}`;
         
+        (e.target as Element).classList.add('transWrap_langActive');
         const btn = document.querySelector('button.toTop');
         if((e.target as Element).textContent === 'EN') {
             (btn as HTMLButtonElement).classList.add('toTopRight');
             (btn as HTMLButtonElement).classList.remove('toTopLeft');
+            ((e.target as Element).previousSibling as Element).classList.remove('transWrap_langActive');
+            
         }else{
             (btn as HTMLButtonElement).classList.remove('toTopRight');
             (btn as HTMLButtonElement).classList.add('toTopLeft');
+            ((e.target as Element).nextSibling as Element).classList.remove('transWrap_langActive');
         }        
     };
     
@@ -72,7 +76,7 @@ function Navbar(props: Props) {
 
             <div className="transWrap">
                 <button data-lang='ar' data-dir='rtl' onClick={(e) => handelClick(e)}>AR</button>
-                <button data-lang='en' data-dir='ltr' onClick={(e) => handelClick(e)}>EN</button>
+                <button data-lang='en' data-dir='ltr' className='transWrap_langActive' onClick={(e) => handelClick(e)}>EN</button>
             </div>
         </div>
     </nav>
