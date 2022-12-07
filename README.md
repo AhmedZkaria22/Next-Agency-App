@@ -40,6 +40,6 @@ By: *Ahmed Zakaria*
   - Facebook  https://www.facebook.com/profile.php?id=100009428856148 
       
     
-- *your opinion important , Don't hesitate to tell me with any bugs or updates app need*
-- *Wait next version of app*
-- *Wait for more projects*
+> - *your opinion important , Don't hesitate to tell me with any bugs or updates app need*
+> - *Wait next version of app*
+> - *Wait for more projects*
