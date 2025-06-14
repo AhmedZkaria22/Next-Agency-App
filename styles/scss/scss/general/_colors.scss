@@ -1,0 +1,312 @@
+@import 'colorsPalette';
+
+body{
+    *{ color: $txt; }
+    * p{ color: $txtLight !important; }
+}
+
+.sectionBtn{
+    background-color: $yellow;
+    color: $txt;
+}
+
+.sectionSmHead, .sectionLgHead{
+    color: $green;
+}
+
+.toTop{
+    background-color: $green;
+    &>svg{
+        fill: $background;
+    }
+}
+
+/* ________ nav bar ________ */
+nav{    
+    background-color: $back1;
+    .logoWrap{
+        svg{
+            stroke: $green !important;
+            fill: $green !important;
+        }
+        span{color: $orange;}
+    }
+    
+    .mainNav{
+        .linksWrap{
+            a{
+                color: $txt !important;
+                &:hover{ color: $txtLight; }
+                &::before{ background-color: $orange; }
+            }
+        }
+        .transWrap{
+            button{
+                background-color: $green;
+                color: $white;
+                border-color: $green !important;
+                &:hover{ background-color: $white;  color: $green; }
+            }
+        }
+    }    
+}
+/* ________ nav bar ________ */
+
+
+/* ________ hero ________ */
+#hero{
+    background-color: $back1;
+    .heroContent{
+        p{
+            a{                 color: $orange;
+                background-color: transparent; }
+        }
+        a{
+            background-color: $green;
+            color: $white;
+            svg{ color: $white; fill: $white !important; }
+        }
+    }
+    &::before{ background-color: #9a9b9e4d; }
+}
+@media screen and (max-width: 768px) {
+    #hero .heroContent>p{ color: #ffffffcc !important; }
+}
+/* ________ hero ________ */
+
+#clients{
+    background-color: $white;
+}
+
+
+/* ________ values ________ */
+#values{
+    .valueItem{
+        &:nth-of-type(1){
+            h6{ background-color: $light-orange;     color: $orange;         svg{ fill: $orange !important; } }            
+            p{ background-color: $light-orange;  border-color: $orange !important; }
+        }
+        &:nth-of-type(2){
+            h6{ background-color: $light-green;      color: $green;;        svg{ fill: $green !important; } }
+            p{ background-color: $light-green;  border-color: $green !important; }
+        }
+        &:nth-of-type(3){
+            h6{ background-color: $light-yellow;     color: $yellow;         svg{ fill: $yellow !important; } }
+            p{ background-color: $light-yellow;  border-color: $yellow !important; }
+        }
+    }
+
+}
+
+/* ________ values ________ */
+
+/* ________ services ________ */
+#services{
+    .servicesHero{
+        h4{
+            color: $txt;
+        }
+        p{
+            color: $txt
+        }
+    }
+    .servicesWrap{
+        .servicesWrap__item{
+            &:nth-of-type(1) .svgWrap , &:nth-of-type(4) .svgWrap{
+                background-color: $light-orange;
+                svg{ stroke: $orange !important; }
+            }
+            &:nth-of-type(2) .svgWrap{
+                background-color: $light-green;
+                svg{ fill: $green !important; }
+            }
+            &:nth-of-type(3) .svgWrap{
+                background-color: $light-yellow;
+                svg{ stroke: $yellow !important; }
+            }
+            &:nth-of-type(4) .svgWrap{
+                svg{ fill: $orange !important; }
+            }
+
+            h5{
+                color: $txt;
+            }
+            p{
+                color: $txtLight;
+            }
+        }
+    }
+}
+/* ________ services ________ */
+
+
+
+#projects{
+    h2{ color: $green; }
+    .projectsControll{
+        button{
+            background-color: $white;
+            &>svg, &>span{ background-color: $light-back1 !important;  border-color: $light-back1 !important; }
+            &:nth-of-type(1) , &:nth-of-type(4){                
+                &>svg{
+                    stroke: $orange;                    
+                }
+                &>span{ color: $orange; }
+            }
+            &:nth-of-type(2), &:nth-of-type(5){
+                &>svg{
+                    stroke: $green;                    
+                }
+                &>span{ color: $green; }
+            }
+            &:nth-of-type(3){
+                &>svg{
+                    stroke: $yellow;                    
+                    fill: $yellow;
+                }
+                &>span{ color: $yellow; }
+            }
+            &:nth-of-type(5) > svg{ fill: $green; }
+        }
+
+    }
+    .projectsWrap{
+        .projectsWrap__item{
+            .infoWrap{
+                background-color: $lightX2-blue;
+                p{
+                    color: $white !important;
+                }
+                .svgWrap{
+                    a{
+                        svg{
+                            color: $white !important;
+                            stroke: $white !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#facts{
+    background-color: $green;
+    .factsWrap{
+        .factsWrap__item{
+            p{
+                color: $white !important;
+            }
+        }
+    }
+}
+
+
+#clients{
+    .clientsSlider{
+        .slick-next:before, .slick-prev:before{
+            color: $txt;
+        }
+    }
+}
+
+
+#testimonials{
+    background-color: $back1;
+    .testimonialsSlider{
+        .slick-list{
+            .slick-track{
+                .slick-slide{
+                    .testmonial{
+                        background-color: $white;
+                        &>svg{ fill: $green; }
+                        .starsWrap{
+                            svg{
+                                fill: $yellow;
+                            }
+                        }
+
+                        p{
+                            color: rgba($txtLight,0.8)!important;
+                        }
+                        .testmonial_bio{
+                            span{ color: rgba($txtLight,0.9)!important; }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+#contact{
+    background-color: $white;
+    form{
+        input, textarea{ background-color: rgba($back4, 0.4);; }
+        button{
+            background-color: $green;
+            border-color: $green !important;
+            color: $white;
+        }
+    } 
+    &>p{
+        color: $txtLight;
+    }
+}
+
+
+#Team{
+    background-color: #e9ecef40;
+    h1{
+        color: $green;
+    }
+    h2{
+        color: $txtLight;
+    }
+    .Team_members_item{
+        background-color: $white;
+        border-bottom-color: $green !important;
+        h3{
+            color: $green;
+        }
+        h6{
+            color: $txt;
+        }
+        p{
+            color: $txtLight;
+        }
+        .Team_members_item_links{
+            a{
+                svg{                    
+                    background-color: $txt;
+                    fill: $white;
+                }
+                &:hover{
+                    svg{ background-color: $yellow !important; }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $txt;
+    p{
+        color: $white !important;
+        svg{
+            fill: $green !important;
+        }
+    }
+    .footerSocial{
+        border-top-color: $background !important;
+        a{
+            svg{
+                fill: $green !important;
+            }
+        }
+    }
+}
+

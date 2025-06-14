@@ -1,0 +1,31 @@
+footer{
+    padding: 1rem 0rem;
+    p{
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        direction: ltr !important;
+    }
+    &>img{
+        width: 10rem;
+        max-width: 10rem !important;
+        margin: 0rem auto 1rem;
+        display: block;
+    }
+    .footerSocial{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0.8rem;
+        border-top: 2px solid;
+        padding: 0.5rem 0.8rem;
+        width: fit-content;
+        margin: auto;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

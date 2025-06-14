@@ -1,0 +1,13 @@
+#map{
+    height: calc(100% - 4.3rem);
+    margin-top: 0rem !important;
+    iframe{
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+        visibility: visible;
+        margin: 0px auto 10px;
+    }
+    @media screen and (max-width: 667px) {  height: 35vh;  }
+} 

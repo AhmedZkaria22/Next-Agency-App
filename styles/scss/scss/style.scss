@@ -1,0 +1,134 @@
+#__next{
+    &> main > section > section{
+        margin-top: 5rem;
+    }
+
+    a{
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+    }
+    &>*{        
+        overflow: hidden;
+    }
+    a, button{
+        &:focus, &:focus-visible{
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+
+
+.sectionBtn{
+    border-radius: 0.5rem !important;
+    width: fit-content;
+}
+
+.sectionLgHead{ text-align: center; }
+
+.sectionSmHead{
+    margin: 0rem !important;
+    text-align: start;
+}
+
+:root{
+    --langLis: 1;    
+}
+
+html{ 
+    scroll-behavior: smooth; 
+    &::-webkit-scrollbar { width: 5px; }
+          
+    &::-webkit-scrollbar-track {
+      background: #fff;
+      border-radius: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: #48B774;
+      border-radius: 10px;
+    }
+}
+
+.toTop{
+    position: fixed;
+    bottom: 1rem;
+    border: none;
+    border-radius: 50%;
+    width: 2.3rem; 
+    height: 2.3rem;
+    z-index: 9;
+    transition: all 0.4s linear 0s;
+    right: 1rem; left: auto;    
+    &>svg{ font-size: 1.5rem; }
+    &.toTopOut{ display: none; }
+    &.toTopIn{ display: block; }
+    &.toTopRight { right: 1rem; left: auto; }
+    &.toTopLeft{ right: auto; left: 1rem; }
+}
+
+@font-face {
+    font-family: 'number';
+    src: url('../assets/fonts/Cairo/Cairo-Medium.woff');
+}
+
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../assets/fonts/Poppins/Poppins-Medium.woff') format('woff')
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.woff') format('woff')
+}
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../assets/fonts/Poppins/Poppins-Light.woff') format('woff')
+}
+@font-face {
+    font-family: 'Poppins-ExtraLight';
+    src: url('../assets/fonts/Poppins/Poppins-ExtraLight.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Cairo-Medium';
+    src: url('../assets/fonts/Cairo/Cairo-Medium.woff') format('woff')
+}
+@font-face {
+    font-family: 'Cairo-Regular';
+    src: url('../assets/fonts/Cairo/Cairo-Regular.woff') format('woff')
+}
+@font-face {
+    font-family: 'Cairo-Light';
+    src: url('../assets/fonts/Cairo/Cairo-Light.woff') format('woff')
+}
+@font-face {
+    font-family: 'Cairo-ExtraLight';
+    src: url('../assets/fonts/Cairo/Cairo-ExtraLight.woff') format('woff')
+}
+
+
+html[lang="ar"] body{ font-family: 'Cairo-Regular', sans-serif; }
+html[lang="en"] body{ font-family: 'Poppins-Regular', sans-serif; }
+
+
+
+@import './general/mixins';
+@import './general/typography';
+@import './general/colors';
+
+@import './navbar';
+@import './hero';
+@import './values';
+@import './services';
+@import './projects';
+@import './facts';
+@import './clients';
+@import './testimonials';
+@import './map';
+@import './contact';
+@import './team';
+@import './footer'; 
+

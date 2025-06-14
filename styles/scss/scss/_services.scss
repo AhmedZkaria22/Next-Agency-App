@@ -1,0 +1,58 @@
+
+#services{
+    padding-inline: 5%;
+    margin-top: 6rem !important;
+    .servicesHero{
+        position: relative;
+        gap: 1.5rem 10%;
+        text-align: start;        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 3rem;
+    }
+    .servicesWrap{
+        @include handelMediaGrid($max: 667px, $tempCol: 1fr, $colGap: 1.5rem, $tempRow: repeat(4, 1fr), $rowGap: 1.5rem );
+        @include handelMediaGrid($min: 667.1px, $max: 768px, $tempCol: repeat(2, 1fr), $colGap: 1.5rem, $tempRow: repeat(2, 1fr), $rowGap: 1.5rem );
+        @include handelMediaGrid($min: 768.1px, $max: 992px, $tempCol: repeat(3, 1fr), $colGap: 1.5rem, $tempRow: repeat(2, 1fr), $rowGap: 1.5rem );
+        @include handelMediaGrid($min: 992.1px, $tempCol: repeat(4, 1fr), $colGap: 1.5rem );
+        .servicesWrap__item{
+            .svgWrap{
+                display: flex;
+                align-items: flex-start;
+                height: -webkit-fill-available;
+                grid-area: siSvg;
+                width: fit-content;
+                border-radius: 0.5rem;
+                svg{
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    padding: 0.7rem;
+                }
+            }
+            h5{
+                text-align: start;                
+                margin-bottom: 0rem;
+                grid-area: siH;
+                padding: 0.5rem 0rem 0rem;
+            }
+            p{
+                text-align: start;
+                grid-area: siP;
+                padding: 0.5rem 0rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .servicesHero{
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr !important;
+        row-gap: 0.25rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #services{ margin-top: 3rem !important; }
+}

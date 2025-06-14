@@ -1,0 +1,111 @@
+#testimonials{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    position: relative;
+    &>h2{
+        margin: 0;
+        position: absolute;
+        top: 1.1rem;
+        left: 0rem;
+        width: 100%;
+        letter-spacing: 0.2rem;
+    }
+    .testimonialsSlider{
+        &>button{
+            top: -1rem;            
+            left: auto !important;
+            z-index: 3;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: {
+                repeat: no-repeat;
+                size: cover;
+                position: center;
+            };
+            opacity: 0.75;
+            &:focus{ opacity: 1; }
+            &.slick-prev{ 
+                right: 6.5rem !important; 
+                background-image: url(../assets/images/prev.png);
+            }
+            &.slick-next{ 
+                right: 3rem !important; 
+                background-image: url(../assets/images/next.png);
+            }
+            &::before{ display: none !important; }
+        }
+        .slick-list{
+            .slick-track{                
+                .slick-slide{
+                    &:active{ cursor: grabbing; }
+                    &>div{
+                        margin-block: 15px;
+                    }
+                    .testmonial{                        	
+                        padding: 0.8rem 0.8rem 1rem;
+                        border-radius: 0.75rem;
+                        height: fit-content;
+                        transition: all 0.2s ease-in-out 0s;
+                        width: calc(100% - 1rem) !important;
+                        margin-inline: 0.5rem;
+                        &>svg{
+                            text-align: start;
+                            display: block;
+                        }
+                        .testmonial_bio{
+                            @include handelGrid($tempCol: 2.6rem auto, $colGap: 0.8rem, $rowGap: 0rem);
+                            grid-template-areas: "tsImg tsH" "tsImg tsPos" "tsStr tsStr";
+                            align-items: center;
+                            justify-content: start;
+                            display: grid;
+                            img{
+                                grid-area: tsImg;
+                                width: 2.6rem;
+                                height: 2.6rem;
+                                border-radius: 50%;
+                            }
+                            h6{
+                                grid-area: tsH;              
+                                text-align: start;                  
+                            }
+                            span{
+                                grid-area: tsPos;
+                                text-align: start;
+                            }
+                            .starsWrap{
+                                grid-area: tsStr;
+                                display: flex;
+                                justify-content: flex-start;
+                                margin-top: 1rem;
+                            }
+                        }
+                        p{
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 667px) {         
+    #testimonials{
+        padding-top: 4rem !important;
+        .testimonialsSlider > button{ 
+            top: calc(100% + 1rem) !important; 
+            &.slick-next{ right: calc(50% - 3.5rem) !important; }
+            &.slick-prev{ right: calc(50% + 0.5rem) !important; }
+        }
+    }
+}
+
+
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+    #testimonials{ margin-top: 3rem !important; }
+}
+@media screen and (max-width: 480px) {
+    #testimonials{ margin-top: 1.5rem !important; }
+}

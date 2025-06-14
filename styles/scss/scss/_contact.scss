@@ -1,0 +1,77 @@
+
+#contact{
+    margin-top: 5rem;
+    padding: 1.5rem 5%;    
+    @include handelGrid($tempCol: repeat(2, 1fr), $colGap: 2.5rem, $rowGap: 0.5rem);
+    grid-template-areas: "cH cH" "cP1 cP2" "cF cM";
+    position: relative;
+    @media screen and (max-width: 667px) {
+        grid-template-areas: "cH" "cP1" "cF" "cP2" "cM";
+        @include handelMediaGrid($max: 667px, $tempCol: 1fr, $colGap: 0rem, $tempRow: repeat(4, auto), $rowGap: 0.5rem );
+        &>*:not(h2){ padding-right: 0% !important; }
+    }
+
+
+    @media screen and (min-width: 1440.1px) {
+        &>*:not(h2){ padding-right: 25% !important; }
+    }
+    &>*:not(h2){ padding-right: 3%; }
+    h2{ 
+        grid-area: cH; 
+    } 
+    form{
+        grid-area: cF;
+        @include handelGrid($tempCol: repeat(2, 1fr), $tempRow: 1fr 1fr 3fr 1fr, $colGap: 0.5rem, $rowGap: 0.5rem);
+        grid-template-areas: "inp1 inp2" "inp3 inp3" "txt txt" "btn .";
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        @media screen and (max-width: 768px) {
+            grid-template-areas: "inp1" "inp2" "inp3" "txt" "btn";
+            @include handelMediaGrid($max: 768px, $tempCol: 1fr, $colGap: 0rem, $tempRow: 1fr 1fr 1fr 3fr 1fr, $rowGap: 0.2rem );
+        }
+    
+
+        &>*{
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            border-radius: 0.5rem;
+            padding: 0.5rem 0.8rem;
+        }
+        input{
+            &:nth-of-type(1){ grid-area: inp1; }
+            &:nth-of-type(2){ grid-area: inp2; }
+            &:nth-of-type(3){ grid-area: inp3; }
+        }
+        textarea{
+            grid-area: txt;
+        }
+        button{
+            grid-area: btn;
+            transition: all 0.3s linear 0s;
+            padding-block: 0.5rem;
+            &:hover{
+                opacity: 0.85;
+                letter-spacing: 2px;
+            }
+        }
+    } 
+
+    &>p{
+        text-align: start;
+        margin-bottom: 0rem !important;
+    }
+    &>p:nth-of-type(1){ grid-area: cP1; }
+    &>p:nth-of-type(2){ grid-area: cP2; }
+    #map{ grid-area: cM; }
+}
+
+
+
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+    #contact{ margin-top: 3rem !important; }
+}
+@media screen and (max-width: 480px) {
+    #contact{ margin-top: 1.5rem !important; }
+}
